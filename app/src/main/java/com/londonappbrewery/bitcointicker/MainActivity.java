@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
-        // TODO: Set an OnItemSelected listener on the spinner
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -62,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    // TODO: complete the letsDoSomeNetworking() method
+    
     private void letsDoSomeNetworking(String url) {
 
         AsyncHttpClient client = new AsyncHttpClient();
